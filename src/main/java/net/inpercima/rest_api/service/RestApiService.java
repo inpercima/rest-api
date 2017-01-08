@@ -4,7 +4,7 @@ import org.springframework.http.HttpEntity;
 
 /**
  * @author Marcel Jänicke
- * @since 10.02.2015
+ * @since 08.01.2017
  */
 public interface RestApiService {
 

@@ -19,9 +19,9 @@ import com.google.common.base.Strings;
 
 /**
  * @author Marcel Jänicke
- * @since 10.02.2015
+ * @since 08.01.2017
  */
-@Service
+@Service("restApiService")
 public class RestApiServiceImpl implements RestApiService {
 
     private static final Logger LOGGER = LoggerFactory.getLogger(RestApiServiceImpl.class);
