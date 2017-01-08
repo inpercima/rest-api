@@ -1,4 +1,4 @@
-package net.inpercima.rest_api.service;
+package net.inpercima.restapi.service;
 
 import org.springframework.http.HttpEntity;
 

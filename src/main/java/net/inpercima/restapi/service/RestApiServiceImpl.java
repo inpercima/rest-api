@@ -1,4 +1,4 @@
-package net.inpercima.rest_api.service;
+package net.inpercima.restapi.service;
 
 import java.nio.charset.StandardCharsets;
 
@@ -10,7 +10,7 @@ import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpMethod;
 import org.springframework.http.converter.StringHttpMessageConverter;
 import org.springframework.http.converter.json.MappingJackson2HttpMessageConverter;
-import org.springframework.stereotype.Service;
+import org.springframework.stereotype.Component;
 import org.springframework.util.LinkedMultiValueMap;
 import org.springframework.util.MultiValueMap;
 import org.springframework.web.client.RestTemplate;
@@ -21,7 +21,7 @@ import com.google.common.base.Strings;
  * @author Marcel Jänicke
  * @since 08.01.2017
  */
-@Service("restApiService")
+@Component("restApiService")
 public class RestApiServiceImpl implements RestApiService {
 
     private static final Logger LOGGER = LoggerFactory.getLogger(RestApiServiceImpl.class);
