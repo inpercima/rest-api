@@ -26,28 +26,6 @@ public class RestApiServiceImpl implements RestApiService {
 
     private static final Logger LOGGER = LoggerFactory.getLogger(RestApiServiceImpl.class);
 
-    public final static String CLIENT_ID = "client_id";
-
-    public final static String CLIENT_SECRET = "client_secret";
-
-    public final static String CODE = "code";
-
-    public final static String ACCEPT = "Accept";
-
-    public final static String ACCESS_TOKEN = "access_token";
-
-    public final static String AUTHORIZATION = "Authorization";
-
-    public final static String GRANT_TYPE = "grant_type";
-
-    public final static String REDIRECT_URI = "redirect_uri";
-
-    public final static String AUTHORIZATION_CODE = "authorization_code";
-
-    public final static String BEARER = "Bearer ";
-
-    public final static String ACCEPT_CHARSET = "Accept-Charset";
-
     @Value("${app.clientId}")
     private String clientId;
 
@@ -107,25 +85,25 @@ public class RestApiServiceImpl implements RestApiService {
 
     private MultiValueMap<String, String> createTokenParams(final String code) {
         final MultiValueMap<String, String> params = new LinkedMultiValueMap<>();
-        params.add(CLIENT_ID, clientId);
-        params.add(CLIENT_SECRET, clientSecret);
-        params.add(GRANT_TYPE, AUTHORIZATION_CODE);
-        params.add(REDIRECT_URI, redirectUri);
-        params.add(CODE, code);
+        params.add(RestApiConstants.CLIENT_ID, clientId);
+        params.add(RestApiConstants.CLIENT_SECRET, clientSecret);
+        params.add(RestApiConstants.GRANT_TYPE, RestApiConstants.AUTHORIZATION_CODE);
+        params.add(RestApiConstants.REDIRECT_URI, redirectUri);
+        params.add(RestApiConstants.CODE, code);
         return params;
     }
 
     private static MultiValueMap<String, String> createAccessParams(final String accessToken) {
         final MultiValueMap<String, String> params = new LinkedMultiValueMap<>();
-        params.add(ACCESS_TOKEN, accessToken);
+        params.add(RestApiConstants.ACCESS_TOKEN, accessToken);
         return params;
     }
 
     private static <T> HttpEntity<T> createHttpEntity(final String accessToken, final String applicationType) {
         final HttpHeaders headers = new HttpHeaders();
-        headers.set(ACCEPT, applicationType);
-        headers.set(AUTHORIZATION, BEARER.concat(Strings.nullToEmpty(accessToken)));
-        headers.set(ACCEPT_CHARSET, StandardCharsets.UTF_8.displayName());
+        headers.set(RestApiConstants.ACCEPT, applicationType);
+        headers.set(RestApiConstants.AUTHORIZATION, RestApiConstants.BEARER.concat(Strings.nullToEmpty(accessToken)));
+        headers.set(RestApiConstants.ACCEPT_CHARSET, StandardCharsets.UTF_8.displayName());
         final HttpEntity<T> entity = new HttpEntity<>(headers);
         return entity;
     }
