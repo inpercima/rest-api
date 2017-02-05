@@ -7,7 +7,7 @@ targetCompatibility = "1.8"
 
 jar {
     baseName = "rest-api"
-    version =  "0.0.1-SNAPSHOT"
+    version =  "0.0.1"
 }
 
 eclipse {
