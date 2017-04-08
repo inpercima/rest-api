@@ -78,7 +78,7 @@ public class RestApiServiceImpl implements RestApiService {
     @Override
     public <T> HttpEntity<T> getForObject(final String url, final String applicationType, final String accessToken,
             final Class<T> clazz) {
-        LOGGER.debug("get {} with {} for token {}", url, applicationType, accessToken);
+        LOGGER.debug("get '{}' with '{}' for token '{}'", url, applicationType, accessToken);
         return restTemplate.exchange(url, HttpMethod.GET, createHttpEntity(accessToken, applicationType), clazz,
                 createAccessParams(accessToken));
     }

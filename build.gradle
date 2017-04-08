@@ -30,7 +30,6 @@ eclipse {
         downloadSources = true
         downloadJavadoc = false
     }
-
 }
 
 repositories { mavenCentral() }
@@ -38,7 +37,8 @@ repositories { mavenCentral() }
 dependencies {
     compile "org.springframework:spring-web:4.3.5.RELEASE",
       "org.slf4j:slf4j-api:1.7.22",
-      "com.google.guava:guava:19.0"
+      "com.google.guava:guava:19.0",
+      "com.fasterxml.jackson.core:jackson-databind:2.8.8"
 
     testCompile "junit:junit:4.12"
 }
