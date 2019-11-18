@@ -2,8 +2,6 @@ package net.inpercima.restapi.service;
 
 import java.nio.charset.StandardCharsets;
 
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.HttpEntity;
 import org.springframework.http.HttpHeaders;
@@ -15,6 +13,8 @@ import org.springframework.util.LinkedMultiValueMap;
 import org.springframework.util.MultiValueMap;
 import org.springframework.web.client.RestTemplate;
 
+import lombok.extern.slf4j.Slf4j;
+
 import com.google.common.base.Strings;
 
 /**
@@ -22,9 +22,8 @@ import com.google.common.base.Strings;
  * @since 08.01.2017
  */
 @Component("restApiService")
+@Slf4j
 public class RestApiServiceImpl implements RestApiService {
-
-    private static final Logger LOGGER = LoggerFactory.getLogger(RestApiServiceImpl.class);
 
     @Value("${app.clientId}")
     private String clientId;
@@ -78,7 +77,7 @@ public class RestApiServiceImpl implements RestApiService {
     @Override
     public <T> HttpEntity<T> getForObject(final String url, final String applicationType, final String accessToken,
             final Class<T> clazz) {
-        LOGGER.debug("get '{}' with '{}' for token '{}'", url, applicationType, accessToken);
+        log.debug("get '{}' with '{}' for token '{}'", url, applicationType, accessToken);
         return restTemplate.exchange(url, HttpMethod.GET, createHttpEntity(accessToken, applicationType), clazz,
                 createAccessParams(accessToken));
     }
