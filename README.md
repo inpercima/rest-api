@@ -5,10 +5,28 @@
 
 Java REST-API for specific apps.
 
+## Prerequisites
+
+### Java
+
+* `jdk 8` or higher
+
 ## Getting started
 
 ```bash
 # clone project
 git clone https://github.com/inpercima/rest-api
 cd rest-api
+```
+
+## Usage
+
+### Package
+
+```bash
+# package
+./mvnw clean package
+
+# package without tests
+./mvnw clean package -DskipTests
 ```
