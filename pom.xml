@@ -8,7 +8,7 @@
 
   <artifactId>rest-api</artifactId>
   <description>Java REST-API for specific apps.</description>
-  <groupId>net.inpercima</groupId>
+  <groupId>net.inpercima.restapi</groupId>
   <name>rest-api</name>
   <packaging>jar</packaging>
   <version>0.1.0-SNAPSHOT</version>
@@ -73,6 +73,25 @@
 
   <build>
     <finalName>${project.artifactId}</finalName>
+
+    <plugins>
+      <plugin>
+        <artifactId>maven-surefire-plugin</artifactId>
+        <version>2.22.2</version>
+      </plugin>
+      <plugin>
+        <artifactId>maven-failsafe-plugin</artifactId>
+        <version>2.22.2</version>
+      </plugin>
+    </plugins>
   </build>
+
+  <distributionManagement>
+   <repository>
+     <id>github inpercima rest-api</id>
+     <name>GitHub inpercima rest-api Apache Maven Packages</name>
+     <url>https://maven.pkg.github.com/inpercima/rest-api</url>
+   </repository>
+</distributionManagement>
 
 </project>
