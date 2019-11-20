@@ -8,7 +8,7 @@
 
   <artifactId>rest-api</artifactId>
   <description>Java REST-API for specific apps.</description>
-  <groupId>net.inpercima.restapi</groupId>
+  <groupId>net.inpercima</groupId>
   <name>rest-api</name>
   <packaging>jar</packaging>
   <version>0.1.1</version>
