@@ -6,7 +6,7 @@
 >
   <modelVersion>4.0.0</modelVersion>
 
-  <artifactId>rest-api</artifactId>
+  <artifactId>restapi</artifactId>
   <description>Java REST-API for specific apps.</description>
   <groupId>net.inpercima</groupId>
   <name>rest-api</name>
@@ -86,9 +86,9 @@
 
   <distributionManagement>
    <repository>
-     <id>github inpercima rest-api</id>
-     <name>GitHub inpercima rest-api Apache Maven Packages</name>
-     <url>https://maven.pkg.github.com/inpercima/rest-api</url>
+     <id>github</id>
+     <name>GitHub inpercima restapi Apache Maven Packages</name>
+     <url>https://maven.pkg.github.com/inpercima/restapi</url>
    </repository>
 </distributionManagement>
 
