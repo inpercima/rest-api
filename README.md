@@ -31,3 +31,26 @@ cd rest-api
 # package without tests
 ./mvnw clean package -DskipTests
 ```
+
+### Install
+
+Add `jitpack.io` as repository to your project, for maven like
+
+```xml
+<repositories>
+ <repository>
+   <id>jitpack.io</id>
+   <url>https://jitpack.io</url>
+ </repository>
+</repositories>
+```
+
+Add `rest-api` as dependency to your project, for maven like
+
+```xml
+<dependency>
+  <groupId>com.github.inpercima</groupId>
+  <artifactId>rest-api</artifactId>
+  <version>v0.0.1</version>
+</dependency>
+```
