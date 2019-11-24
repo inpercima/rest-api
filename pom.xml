@@ -90,6 +90,6 @@
      <name>GitHub inpercima rest-api Apache Maven Packages</name>
      <url>https://maven.pkg.github.com/inpercima/rest-api</url>
    </repository>
-</distributionManagement>
+  </distributionManagement>
 
 </project>
