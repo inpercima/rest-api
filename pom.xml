@@ -11,7 +11,7 @@
   <groupId>net.inpercima</groupId>
   <name>rest-api</name>
   <packaging>jar</packaging>
-  <version>1.0.0-SNAPSHOT</version>
+  <version>1.0.0</version>
 
   <properties>
     <java.version>1.8</java.version>
@@ -91,5 +91,4 @@
      <url>https://maven.pkg.github.com/inpercima/rest-api</url>
    </repository>
   </distributionManagement>
-
 </project>
