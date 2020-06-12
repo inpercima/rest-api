@@ -11,7 +11,7 @@
   <groupId>net.inpercima</groupId>
   <name>rest-api</name>
   <packaging>jar</packaging>
-  <version>1.0.0</version>
+  <version>1.0.1</version>
 
   <properties>
     <java.version>1.8</java.version>
@@ -24,7 +24,7 @@
   <dependencies>
     <dependency>
       <groupId>org.springframework</groupId>
-      <artifactId>spring-core</artifactId>
+      <artifactId>spring-context</artifactId>
       <version>5.2.7.RELEASE</version>
     </dependency>
     <dependency>

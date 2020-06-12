@@ -11,6 +11,7 @@ import org.springframework.http.converter.json.MappingJackson2HttpMessageConvert
 import org.springframework.util.LinkedMultiValueMap;
 import org.springframework.util.MultiValueMap;
 import org.springframework.web.client.RestTemplate;
+import org.springframework.stereotype.Service;
 
 import lombok.Getter;
 import lombok.Setter;
@@ -25,6 +26,7 @@ import com.google.common.base.Strings;
 @Slf4j
 @Getter
 @Setter
+@Service
 public class RestApiService {
 
     @Value("${app.clientId}")
@@ -83,5 +85,4 @@ public class RestApiService {
         final HttpEntity<T> entity = new HttpEntity<>(headers);
         return entity;
     }
-
 }

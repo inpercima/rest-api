@@ -2,7 +2,7 @@
 
 [![MIT license](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)
 [![Release](https://jitpack.io/v/inpercima/rest-api.svg)](https://jitpack.io/#inpercima/rest-api)
-![Github Action](https://github.com/inpercima/rest-api/workflows/Java%20CI/badge.svg)
+![Github Action CI](https://github.com/inpercima/rest-api/workflows/CI/badge.svg)
 
 Java REST-API for specific apps.
 
@@ -51,6 +51,6 @@ Add `rest-api` as dependency to your project, for maven like
 <dependency>
   <groupId>com.github.inpercima</groupId>
   <artifactId>rest-api</artifactId>
-  <version>v1.0.0</version>
+  <version>v1.0.1</version>
 </dependency>
 ```

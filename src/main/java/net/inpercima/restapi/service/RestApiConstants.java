@@ -23,5 +23,4 @@ public class RestApiConstants {
     public final static String BEARER = "Bearer ";
 
     public final static String ACCEPT_CHARSET = "Accept-Charset";
-
 }
