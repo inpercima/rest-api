@@ -13,5 +13,4 @@ public class RestApiServiceTest {
         final Object object = restApiService.getForObject(url, "application/json", "", Object.class).getBody();
         Assertions.assertNotNull(object);
     }
-
 }
