@@ -66,10 +66,10 @@
   </properties>
 
   <distributionManagement>
-   <repository>
-     <id>github inpercima rest-api</id>
-     <name>GitHub inpercima rest-api Apache Maven Packages</name>
-     <url>https://maven.pkg.github.com/inpercima/rest-api</url>
-   </repository>
+    <repository>
+      <id>github</id>
+      <name>GitHub Packages</name>
+      <url>https://maven.pkg.github.com/inpercima/rest-api</url>
+    </repository>
   </distributionManagement>
 </project>
