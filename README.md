@@ -51,7 +51,7 @@ Add `rest-api` as dependency to your project, for maven like
 <dependency>
   <groupId>com.github.inpercima</groupId>
   <artifactId>rest-api</artifactId>
-  <version>v1.0.2</version>
+  <version>v1.0.3</version>
 </dependency>
 ```
 
@@ -106,6 +106,6 @@ Add `rest-api` as dependency to your project, for maven like
 <dependency>
   <groupId>net.inpercima</groupId>
   <artifactId>rest-api</artifactId>
-  <version>1.0.2</version>
+  <version>1.0.3</version>
 </dependency>
 ```
