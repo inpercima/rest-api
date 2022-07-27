@@ -10,7 +10,7 @@ Java REST-API for specific apps.
 
 ### Java
 
-* `jdk 11` or higher
+* `jdk 17` or higher
 
 ## Getting started
 
